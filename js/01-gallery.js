@@ -39,11 +39,11 @@ function imgOpenModal(e) {
 
     //* add Escape to the gallery
 
-    window.addEventListener('keydown', pressEscapeKeyboard);
-    function pressEscapeKeyboard(e) {
+    window.addEventListener('keydown', pressEscape);
+    function pressEscape(e) {
         if (e.code === 'Escape') {
             instance.close();
-            window.removeEventListener('keydown', pressEscapeKeyboard);
+            window.removeEventListener('keydown', pressEscape);
         }
     }
 }
