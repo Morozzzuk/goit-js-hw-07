@@ -39,7 +39,7 @@ function imgOpenModal(e) {
 
     //* add Escape to the gallery
 
-    window.addEventListener('keydown', pressEscape);
+    document.addEventListener('keydown', pressEscape);
     function pressEscape(e) {
         if (e.code === 'Escape') {
             instance.close();
